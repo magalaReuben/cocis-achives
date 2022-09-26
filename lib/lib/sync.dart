@@ -6,7 +6,7 @@ import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 //}
 
 class HomePage extends StatefulWidget {
-  final String? pdf;
+  final String pdf;
   const HomePage({super.key, required this.pdf});
 
   @override
@@ -25,7 +25,7 @@ class _HomePage extends State<HomePage> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          body: SfPdfViewer.asset('pdfs/QUESTIONS0042.pdf'),
+          body: SfPdfViewer.asset(widget.pdf),
         ));
   }
 }
@@ -43,7 +43,7 @@ class _HomePage extends State<HomePage> {
 // }
 
 class MyPdf extends StatefulWidget {
-  final String? pdf;
+  final String pdf;
   const MyPdf({super.key, required this.pdf});
 
   @override

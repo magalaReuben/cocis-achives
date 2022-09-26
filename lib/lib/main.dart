@@ -69,16 +69,11 @@ class _ChooseCourseUnitState extends State<ChooseCourseUnit> {
     // 'Data Warehousing and Business Intelligence '
     {
       "Name": "Computer Literacy",
-      "PDF": [
-        "lib/pdfs/CSC1100 Computer Literacy Examination End of Semester I 202-2021 (1).pdf",
-        "lib/pdfs/QUESTIONS0042.pdf"
-      ]
+      "PDF": ["pdfs/QAAA.pdf", "pdfs/QUESTIONS0042.pdf"]
     },
     {
       "Name": "Communication Skills",
-      "PDF": [
-        "lib/pdfs/CSC1100 Computer Literacy Examination End of Semester I 202-2021 (1).pdf"
-      ],
+      "PDF": ["pdfs/QAAA.pdf"],
     },
     {
       "Name": "Computer Organosation and Architecture",
