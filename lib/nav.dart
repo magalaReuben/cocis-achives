@@ -8,7 +8,7 @@ import 'package:cocis_archives/sync.dart';
 //import io.flutter.embedding.android.FlutterActivity;
 
 class navi extends StatefulWidget {
-  final List<String?> pdfs;
+  final List<String> pdfs;
   final String title;
 
   const navi({super.key, required this.pdfs, required this.title});
