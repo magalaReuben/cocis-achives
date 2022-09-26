@@ -36,8 +36,11 @@ class _naviState extends State<navi> {
           return GestureDetector(
               onTap: () {
                 //print(widget.pdfs[0]);
-                Navigator.push(context,
-                    MaterialPageRoute(builder: ((context) => MyPdf())));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: ((context) =>
+                            MyPdf(pdf: widget.pdfs[index]))));
               },
               child: Card(
                 child: Container(

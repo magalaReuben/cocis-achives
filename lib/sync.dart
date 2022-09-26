@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
-void main() {
-  runApp(const MyPdf());
-}
+//void main() {
+//  runApp(const MyPdf());
+//}
 
 class MyPdf extends StatelessWidget {
-  const MyPdf({Key? key}) : super(key: key);
+  final String? pdf;
+  const MyPdf({super.key, required this.pdf});
 
   @override
   Widget build(BuildContext context) {
