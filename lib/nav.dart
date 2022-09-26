@@ -31,7 +31,7 @@ class _naviState extends State<navi> {
       body: GridView.builder(
         shrinkWrap: true,
         padding: const EdgeInsets.symmetric(horizontal: 30),
-        itemCount: widget.pdfs.length,
+        itemCount: showwidget(), //widget.pdfs.length,
         itemBuilder: (context, index) {
           return GestureDetector(
               onTap: () {
@@ -86,48 +86,57 @@ class _naviState extends State<navi> {
       ),
     );
   }
+
+  showwidget() {
+    if (widget.pdfs[0] == null) {
+      print(widget.pdfs[0]);
+      return 0;
+    } else {
+      return widget.pdfs.length;
+    }
+  }
 }
 
-// class Compsc1 extends StatefulWidget {
-//   const Compsc1({super.key});
+class Compsc1 extends StatefulWidget {
+  const Compsc1({super.key});
 
-//   @override
-//   State<Compsc1> createState() => _Compsc1State();
-// }
+  @override
+  State<Compsc1> createState() => _Compsc1State();
+}
 
-// class _Compsc1State extends State<Compsc1> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: const Text('Navigation'),
-//         centerTitle: true,
-//       ),
-//       body: const Center(
-//         child: Text('Welcome to this navigtion This is unit 2'),
-//       ),
-//     );
-//   }
-// }
+class _Compsc1State extends State<Compsc1> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Navigation'),
+        centerTitle: true,
+      ),
+      body: const Center(
+        child: Text('Welcome to this navigtion This is unit 2'),
+      ),
+    );
+  }
+}
 
-// class Comp3 extends StatefulWidget {
-//   const Comp3({super.key});
+class Comp3 extends StatefulWidget {
+  const Comp3({super.key});
 
-//   @override
-//   State<Comp3> createState() => _Comp3State();
-// }
+  @override
+  State<Comp3> createState() => _Comp3State();
+}
 
-// class _Comp3State extends State<Comp3> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: const Text('Navigation'),
-//         centerTitle: true,
-//       ),
-//       body: const Center(
-//         child: Text('Welcome to this navigtion to comp 3'),
-//       ),
-//     );
-//   }
-// }
+class _Comp3State extends State<Comp3> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Navigation'),
+        centerTitle: true,
+      ),
+      body: const Center(
+        child: Text('Welcome to this navigtion to comp 3'),
+      ),
+    );
+  }
+}

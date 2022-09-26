@@ -76,11 +76,13 @@ class _ChooseCourseUnitState extends State<ChooseCourseUnit> {
     },
     {
       "Name": "Communication Skills",
-      "PDF": [null, null],
+      "PDF": [
+        "lib/pdfs/CSC1100 Computer Literacy Examination End of Semester I 202-2021 (1).pdf"
+      ],
     },
     {
       "Name": "Computer Organosation and Architecture",
-      "PDF": [null],
+      "PDF": [null, null],
     },
     {
       "Name": "Mathematics For Computer Science ",
