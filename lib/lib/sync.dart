@@ -5,18 +5,6 @@ import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 //  runApp(const MyPdf());
 //}
 
-class MyPdf extends StatelessWidget {
-  final String? pdf;
-  const MyPdf({super.key, required this.pdf});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePage(pdf: "hello universe"),
-    );
-  }
-}
-
 class HomePage extends StatefulWidget {
   final String? pdf;
   const HomePage({super.key, required this.pdf});
@@ -39,5 +27,34 @@ class _HomePage extends State<HomePage> {
         home: Scaffold(
           body: SfPdfViewer.asset('pdfs/QUESTIONS0042.pdf'),
         ));
+  }
+}
+
+// class MyPdf extends StatelessWidget {
+//   final String? pdf;
+//   const MyPdf({super.key, required this.pdf});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return const MaterialApp(
+//       home: HomePage(pdf:),
+//     );
+//   }
+// }
+
+class MyPdf extends StatefulWidget {
+  final String? pdf;
+  const MyPdf({super.key, required this.pdf});
+
+  @override
+  State<MyPdf> createState() => _MyPdfState();
+}
+
+class _MyPdfState extends State<MyPdf> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: HomePage(pdf: widget.pdf),
+    );
   }
 }
