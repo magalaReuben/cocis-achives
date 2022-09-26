@@ -12,7 +12,7 @@ class MyPdf extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomePage(pdf: ""),
+      home: HomePage(pdf: "hello universe"),
     );
   }
 }
